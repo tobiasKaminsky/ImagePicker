@@ -41,6 +41,7 @@ open class ImagePicker {
         internal const val EXTRA_ERROR = "extra.error"
         internal const val EXTRA_FILE_PATH = "extra.file_path"
         internal const val EXTRA_MIME_TYPES = "extra.mime_types"
+        internal const val EXTRA_FILE = "extra.file"
 
         /**
          * Use this to use ImagePicker in Activity Class

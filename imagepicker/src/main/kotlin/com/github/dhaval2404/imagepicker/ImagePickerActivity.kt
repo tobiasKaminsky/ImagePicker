@@ -109,6 +109,10 @@ class ImagePickerActivity : AppCompatActivity() {
                 setError(getString(R.string.error_task_cancelled))
             }
         }
+
+        (intent?.getSerializableExtra(ImagePicker.EXTRA_FILE) as File?)?.let{
+            setImage(it)
+        }
     }
 
     /**
