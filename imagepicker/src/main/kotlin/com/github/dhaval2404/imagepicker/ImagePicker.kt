@@ -168,6 +168,11 @@ open class ImagePicker {
             this.imageProvider = ImageProvider.GALLERY
             return this
         }
+        
+        fun fileOnly() : Builder {
+            this.imageProvider = ImageProvider.FILE
+            return this
+        }
 
         /**
          * Restrict mime types during gallery fetching, for instance if you do not want GIF images,
